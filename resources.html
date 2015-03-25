@@ -1,0 +1,184 @@
+﻿<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ressourcen - Spielmarmelade</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script src="multilang.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				initLanguage();
+			});
+		</script>
+
+		<style> /* Fallback to German */
+			[lang]:not([lang="de"]) {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="border-wrapper"><div id="wrapper"><div id="text-wrapper">
+			<div class="actions-right languages">
+				<a href="javascript:setLanguage('de')">Deutsch</a> <a href="javascript:setLanguage('en')">English</a>
+			</div>
+
+			<div class="actions-left">
+				<a lang="de" href="index.html"><i class="fa fa-arrow-left"></i> Zurück</a>
+				<a lang="en" href="index.html"><i class="fa fa-arrow-left"></i> Back</a>
+			</div>
+
+			<header>
+				<h1 lang="de">Ressourcen</h1>
+				<h1 lang="en">Resources</h1>
+			</header>
+
+			<p lang="de">
+				Alle von uns vorgeschlagenen Ressourcen sind nur eine sehr kleine Auswahl möglicher Optionen von denen Joel irgendwann mal gehört hat. Wer mehr Optionen möchte, darf sich gerne mal bei <a href="#more">"Mehr"</a> umschauen.
+			</p>
+			<p lang="en">
+				This list of recommended resources is just a very small selection of possible options that Joel has heard of some time in the past. If you want to have further alternatives, feel free to check out the <a href="#more">"more"</a> section.
+			</p>
+
+			<h3 lang="de">Engines und Frameworks</h3>
+			<h3 lang="en">Engines and Frameworks</h3>
+			<ul>
+				<li>
+					<a name="lua"></a>
+					Lua
+					<ul>
+						<li lang="de"><b><a href="https://love2d.org/">löve2D</a> - Auch ohne Lua-Erfahrung eine hervorragende 2D-Engine, die sich überaus gut für Game Jams eignet. <span class="annotation">(Joel liebt dieses Ding und kann euch gerne mit Rat und Tat zur Seite stehen, wenn ihr euch dafür entscheidet)</span></b></li>
+						<li lang="en"><b><a href="https://love2d.org/">löve2D</a> - A great 2D-Engine suited for game jams, even without knowning Lua. <span class="annotation">(Joel loves this engine and will gladly assist you if you decide to try it)</span></b></li>
+
+						<li><a href="http://polycode.org/">Polycode (3D)</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="python"></a>
+					Python
+					<ul>
+						<li><a href="http://pygame.org/news.html">PyGame (2D)</a></li>
+						<li><a href="http://cocos2d.org/#cocos2dpy">Cocos-2D</a></li>
+						<li><a href="https://www.panda3d.org/">Panda3D</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="c"></a>
+					C
+					<ul>
+						<li><a href="https://www.libsdl.org/">SDL</a></li>
+						<li><a href="http://alleg.sourceforge.net/">Allegro</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="cpp"></a>
+					C++
+					<ul>
+						<li><a href="http://irrlicht.sourceforge.net/">Irrlicht Engine</a></li>
+						<li><a href="http://www.crystalspace3d.org/">Crystal Space</a></li>
+						<li><a href="https://www.unrealengine.com/">Unreal Engine 4</a></li>
+						<li lang="de"><a href="http://www.ogre3d.org/">OGRE (nur Grafik)</a></li>
+						<li lang="en"><a href="http://www.ogre3d.org/">OGRE (graphics only)</a></li>
+						<li lang="de"><a href="http://www.horde3d.org/">Horde3D (nur Grafik)</a></li>
+						<li lang="en"><a href="http://www.horde3d.org/">Horde3D (graphics only)</a></li>
+						<li><a href="http://www.sfml-dev.org/">SFML</a></li>
+						<li><a href="http://www.godotengine.org/wp/">Godot</a></li>
+						<li><a href="https://www.panda3d.org/">Panda3D</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="csharp"></a>
+					C#
+					<ul>
+						<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=23714">Microsoft XNA</a></li>
+						<li><a href="http://duality.adamslair.net/">Duality</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="html5"></a>
+					Javascript / HTML5
+					<ul>
+						<li><a href="http://phaser.io/">Phaser</a></li>
+						<li><a href="http://threejs.org/">three.js</a></li>
+						<li><a href="https://playcanvas.com/">PlayCanvas</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="java"></a>
+					Java
+					<ul>
+						<li><a href="http://jmonkeyengine.org/">jMonkeyEngine 3.0</a></li>
+						<li><a href="http://libgdx.badlogicgames.com/">LibGDX</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="custom"></a>
+					<span lang="de">Eigene Sprache</span><span lang="en">Custom language</span>
+					<ul>
+						<li><a href="http://www.godotengine.org/wp/">Godot</a></li>
+						<li><a href="http://unity3d.com/">Unity Engine</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a name="noprogramming"></a>
+					<span lang="de">Ohne Programmieren (dennoch sollte man sich vorher ein wenig damit befassen):</span>
+					<span lang="en">Without programming (you should still dip into it beforehand):</span>
+					<ul>
+						<li><b><a href="https://www.yoyogames.com/studio">GameMaker: Studio</a></li>
+						<li><a href="https://www.unrealengine.com/">Unreal Engine 4</a></li>
+						<li lang="de"><a href="http://www.stencyl.com/">Stencyl</a><span class="annotation">(in der kostenlosen Version nur Web als Target)</span></li>
+						<li lang="en"><a href="http://www.stencyl.com/">Stencyl</a><span class="annotation">(only targets web in the free version)</span></li>
+						<li lang="de"><a href="http://www.blender.org/">Blender Game Engine</a> <span class="annotation">(Spiele sind Zwangsweise unter der GPL)</span></li>
+						<li lang="en"><a href="http://www.blender.org/">Blender Game Engine</a> <span class="annotation">(games have to be published under GPL)</span></li>
+						<li><a href="https://www.scirra.com/construct2">Construct 2</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>Survival Guides</h3>
+			<ul>
+				<li><a href="http://sol.gfxile.net/ldsurvival.html">Sol's "rules" for surviving Ludum Dare 48h</a></li>
+				<li><a href="http://gamedevelopment.tutsplus.com/articles/how-to-get-the-most-out-of-a-game-jam--gamedev-437">How to Get the Most Out of a Game Jam</a></li>
+			</ul>
+
+			<h3 lang="de">Mehr</h3>
+			<h3 lang="en">More</h3>
+			<a name="more"></a>
+			<ul>
+				<li lang="de"><b><a href="http://ludumdare.com/compo/tools/">Ludum Dare - Tools</a></b> - Ludum Dare ist der größte regelmäßigene online Game Jam</li>
+				<li lang="en"><b><a href="http://ludumdare.com/compo/tools/">Ludum Dare - Tools</a></b> - Ludum Dare is the largest online game jam</li>
+				<li lang="de"><b><a href="https://docs.google.com/spreadsheets/d/1o9VvQ2CqXXktuE1diTuM1ZBE79LxW1t3GKD3tdgt6xw/edit#gid=0">GameDev Ressources</a></b> - Die vollständigste Ressourcesammlung, die ich bis jetzt gesehen habe.</li>
+				<li lang="en"><b><a href="https://docs.google.com/spreadsheets/d/1o9VvQ2CqXXktuE1diTuM1ZBE79LxW1t3GKD3tdgt6xw/edit#gid=0">GameDev Ressources</a></b> - Most complete resource collection that I have seen so far.</li>
+				<li><a href="http://www.slant.co/topics/1907/~what-are-the-best-game-engines-for-beginners-and-non-coders">"What are the best engines for beginners and non-coders?"</a></li>
+				<li><a href="https://github.com/ellisonleao/magictools">GitHub - ellisonleao's magictools</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/List_of_game_engines">Wikpedia - List of game engines</a></li>
+				<li><a href="http://forums.tigsource.com/index.php?topic=21471.0">TIGForums - Game Engines for Indie Developers</a></li>
+				<li><a href="http://www.reddit.com/r/gamedev/comments/18e38t/pocketknives_for_game_developers/">r/gamedev - Pocketknives for Game Developers</a></li>
+				<li lang="de"><a href="https://docs.google.com/document/d/1qQf5zjvJHEB40xYhTiFo9GzNYUBt8iAw8vzPu2Oy354/edit">Global Game Jam - Resources for Jammers</a> - Der Global Game Jam ist der größte Game Jam mit real-life meetups</li>
+				<li lang="en"><a href="https://docs.google.com/document/d/1qQf5zjvJHEB40xYhTiFo9GzNYUBt8iAw8vzPu2Oy354/edit">Global Game Jam - Resources for Jammers</a> - The Global Game Jam is the worlds largets game jam with real-life meetups</li>
+				<li><a href="https://html5gameengine.com/">HTML5 Game Engines</a></li>
+			</ul>
+
+		</div></div></div>
+	</body>
+</html>

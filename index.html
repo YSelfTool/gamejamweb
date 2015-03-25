@@ -1,0 +1,204 @@
+﻿<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Spielmarmelade</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="jquery.countdown.min.css">
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script src="jquery.countdown.min.js"></script>
+		<script src="multilang.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				initLanguage();
+				$('.countdown').each(function() {
+					var $this = $(this), finalDate = $(this).data('countdown');
+					$this.countdown(finalDate, function(event) {
+						if (getLanguage() == "en") {
+							$this.html(event.strftime(''
+								+ '<span class="countdown-section"><span class="countdown-amount">%D</span><br>Days</span>'
+								+ '<span class="countdown-section"><span class="countdown-amount">%H</span><br>Hours</span>'
+								+ '<span class="countdown-section"><span class="countdown-amount">%M</span><br>Minutes</span>'
+								+ '<span class="countdown-section"><span class="countdown-amount">%S</span><br>Seconds</span>'));
+						} else {
+							$this.html(event.strftime(''
+								+ '<span class="countdown-section"><span class="countdown-amount">%D</span><br>Tage</span>'
+								+ '<span class="countdown-section"><span class="countdown-amount">%H</span><br>Stunden</span>'
+								+ '<span class="countdown-section"><span class="countdown-amount">%M</span><br>Minuten</span>'
+								+ '<span class="countdown-section"><span class="countdown-amount">%S</span><br>Sekunden</span>'));
+						}
+
+					});
+				});
+
+			});
+		</script>
+
+		<style> /* Fallback to German */
+			[lang]:not([lang="de"]) {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="border-wrapper"><div id="wrapper"><div id="text-wrapper">
+			<div class="actions-right languages">
+				<a href="javascript:setLanguage('de')">Deutsch</a> <a href="javascript:setLanguage('en')">English</a>
+			</div>
+
+			<header>
+				<h1>Spielmarmelade</h1>
+				<p lang="de">
+					48h Game Development Workshop<br>
+					ein Game Jam in Koorperation mit der Fachschaft I.I
+				</p>
+				<p lang="en">
+					48h Game Development Workshop<br>
+					a game jam in cooperation with the Student Representative Council I.I
+				</p>
+				<hr>
+				<div class="countdown-outer">
+					<p lang="de">24.-26. April 2015</p>
+					<p lang="en">April 24-26, 2015</p>
+					<div class="countdown" data-countdown="2015/04/24 20:00 +0100"></div>
+				</div>
+				<hr>
+			</header>
+
+			<p lang="de">Am <b>24. April</b> findet um 20:30 im <b>Seminarraum 5055</b> im Informatikzentrum der Game Jam der Fachschaft I.I der RWTH Aachen statt.</p>
+			<p lang="en">On the <b>24th of April</b>, at 8:30pm, there will be a game jam of the Student Representative Council I.I of the RWTH Aachen, in the <b>seminar room 5055</b> (computer science buildings).</p>
+
+			<h2 lang="de">Was ist ein Game Jam?</h2>
+			<h2 lang="en">What is a game jam?</h2>
+			<p lang="de">
+				Bei einem <a href="http://en.wikipedia.org/wiki/Game_jam">Game Jam</a> treffen sich spielebegeisterte Menschen und machen in kleinen Gruppen gemeinsam ein Spiel. Wie auch bei unserem Jam ist das übliche Format dabei zeitlich durch 48 Stunden und ein Thema beschränkt, das aber eher als Orientierung und Inspiration, statt als harte Regel zu verstehen ist.
+
+				Dabei sind eine große Breite von Kompetenzen wichtig, ob Programmierer, Artist, Designer, Musiker - ihr findet sicher alle einen Platz. Idealerweise hat jedes Team von jedem mindestens einen.<br>
+
+				Wir möchten an dieser Stelle explizit alle erfahrenen Jammer darum bitten, teilzunehmen, um Neulingen den Einstieg zu erleichtern und die lokale Community zu unterstützen!
+			</p>
+			<p lang="en">
+				A <a href="http://en.wikipedia.org/wiki/Game_jam">game jam</a> is a gathering of game enthusiasts who come together to create games in small teams. Usually, and also in our case, the jam lasts exactly 48 hours and has a theme, which acts rather as a guideline and inspiration than as a restriction.
+
+				A large range of skills is neccessary, so no matter whether you are a programmer, artist, designer, musician - you will definitely fit in here. In the optimal case, every team is made up of one person of each expertise.
+			</p>
+
+
+			<h2 lang="de">Noch nie ein Spiel gemacht?</h2>
+			<h2 lang="en">Never made a game before?</h2>
+			<p lang="de">
+				Weiterhin ist diese Veranstaltung nicht nur für Veteranen und erfahrene Spielemacher gedacht, sondern auch für Leute, die es vielleicht nur einmal ausprobieren wollen. Solange ihr Motivation, Kooperationsbereitschaft und entfernt relevante Fähigkeiten mitbringt, erwartet euch sicherlich eine tolle Erfahrung!<br><br>
+
+				Wir haben eine Liste mit Engines (sowohl für Programmierer als auch für Nicht-Programmierer) und anderen nützlichen Ressourcen zusammengestellt, die ihr <a href="resources.html"><b>HIER</b></a> finden könnt.
+
+				<br>
+				Wenn ihr Programmieren könnt:<br>
+				Wir empfehlen keine Systemsprache zu verwenden und Umgebungen mit stabilen Frameworks zu benutzen, ABER am aller wichtigsten ist, dass man sich wohl fühlt und Spaß hat, also zögert nicht euer Spiel in Assembly, in Bytecode im Hex-Editor oder auf eurem Gameboy Color zu schreiben.<br>
+				Übliche und beliebte Wahlen sind neben Python (<a href="resources.html#Python">Engines</a>), Lua (<a href="resources.html#Lua">Engines</a>), Javascript (<a href="resources.html#HTML5">Engines</a>) und natürlich <a href="http://unity3d.com/">Unity</a>.
+				<br>
+
+				Wenn ihr unsicher seid oder das Gefühl habt, noch ein paar Informationen zu benötigen, um euch gewappnet zu fühlen, scheut euch nicht, uns zu schreiben! Auf der Jamsite stehen wir euch natürlich auch immer für Fragen zur Verfügung.
+			</p>
+			<p lang="en">
+				Furthermore, this event is not only for "game jam veterans" and experienced game designers, but also for those who just want to give it a shot.
+				As long as you are motivated, willing to work as a team and can contribute with your skills, this will certainly be an awesome experience!<br><br>
+
+				We have compiled a list of engines (for programmers as well as non-programmers) and other ressources for you, which you can find <a href="resources.html"><b>HERE</b></a>!
+
+				<br>
+				If you already have some programming expertise:<br>
+				We recommend not to use a system programming language, but to focus on environments with stable frameworks. BUT, most importantly, choose a language with which you feel comfortable and have fun, so feel free to write your games in assembly, byte code in a hex editor or on your Gameboy Color.<br>
+				Common and popular language choices are Python (<a href="resources.html#Python">Engines</a>), Lua (<a href="resources.html#Lua">Engines</a>), Javascript (<a href="resources.html#HTML5">Engines</a>) und of course <a href="http://unity3d.com/">Unity</a>.
+
+				If you are unsure or in the need of more information, don't hesitate to hit us up with an email! We will also always be present at the jam site.
+			</p>
+
+			<h2 lang="de">Ablauf</h2>
+			<h2 lang="en">Schedule</h2>
+			<ul lang="de">
+				<li><b>Freitag, 20:00:</b> Einlass</li>
+				<li><b>Freitag, 20:30:</b> kurze Ansprache und Themenbekanntgabe,<br>
+					anschließend Brainstormphase, Vorstellen der Ideen und Teambildung</li>
+				<li><b>Samstag, 20:30:</b> Halbzeit, Playtesting-Session</li>
+				<li><b>Sonntag, 20:30:</b> Ende der Jamzeit und Präsentation der fertigen Spiele</li>
+			</ul>
+			<ul lang="en">
+				<li><b>Friday, 8:00pm:</b> doors</li>
+				<li><b>Friday, 8:30pm:</b> short introduction and announcement of the theme,<br>
+					brain storming, idea pitching and formation of groups afterwards</li>
+				<li><b>Saturday, 8:30pm:</b> half time, playtesting session</li>
+				<li><b>Sunday, 8:30pm:</b> end of the jam time, presentation of the games</li>
+			</ul>
+
+
+			<p lang="de">
+				Die Location wird aufgrund von Beschränkungen der Hochschule <b>von 0 bis 8 Uhr nicht verfügbar</b> sein, sodass ihr und euer Hab und Gut den Raum über Nacht verlassen müsst.
+				Für Snacks und einige Getränke ist gesorgt. Für weitere Verpflegung sorgt man selbst, ein Trip zur Pontstraße oder ein Lieferservice.
+			</p>
+			<p lang="en">
+				Because of restrictions of the university, the jam site will <b>not be accessible from 0am to 8am</b>, so you and all your belongings will have to leave the room overnight.
+				We will provide you with basic snacks and some drinks, but bring your own food, go to the Pontstraße or order something.
+			</p>
+
+			<!-- <h2>Location</h2>
+			<p>
+				<iframe src="https://www.google.com/maps/d/embed?mid=zfjENDyXe1JU.knxLCnmDf9_Y" width="100%" height="480"></iframe>
+			</p> -->
+
+			<p lang="de">
+				Wir würden uns alle freuen, wenn ihr zahlreich erscheint, vielleicht eine neue Passion entdeckt und tolle Spiele macht.<br>
+
+				Solltet ihr weitere Fragen haben, uns Feedback geben wollen oder euer Erscheinen vorzeitig versichern um unsere Planung zu vereinfachen (bitte, bitte), meldet euch bitte bei:
+				<br>
+				<a href="mailto:gamejam@lists.fsmpi.rwth-aachen.de"><i class="fa fa-envelope"></i>&nbsp; gamejam@lists.fsmpi.rwth-aachen.de</a>
+			</p>
+			<p lang="en">
+				We are excited to welcome you here and also excited for your awesome games. Who knows, maybe you will even discover a new hobby.<br>
+
+				If you have further questions, want to provide feedback or want to pre-reserve a spot to facilitate our planning (please!), please write an email to:
+				<br>
+				<a href="mailto:gamejam@lists.fsmpi.rwth-aachen.de"><i class="fa fa-envelope"></i>&nbsp; gamejam@lists.fsmpi.rwth-aachen.de</a>
+			</p>
+
+			<p lang="de">
+				Wir sehen uns beim Game Jam!
+			</p>
+			<p lang="en">
+				See you at the game jam!
+			</p>
+
+			<div class="signature">
+				<span lang="de">Joel, Jonas und Robin</span>
+				<span lang="en">Joel, Jonas and Robin</span>
+			</div>
+
+<!--
+			<br>
+			<a class="twitter-timeline" data-dnt="true" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/hashtag/spielmarmelade" data-widget-id="574890858706812928">#spielmarmelade-Tweets</a>
+			<script>
+				!function(d, s, id) {
+				    var js, fjs = d.getElementsByTagName(s)[0],
+				        p = /^http:/.test(d.location) ? 'http' : 'https';
+				    if (!d.getElementById(id)) {
+				        js = d.createElement(s);
+				        js.id = id;
+				        js.src = p + "://platform.twitter.com/widgets.js";
+				        fjs.parentNode.insertBefore(js, fjs);
+				    }
+				}(document, "script", "twitter-wjs");
+			</script>
+-->
+		</div></div></div>
+	</body>
+</html>
