@@ -434,6 +434,8 @@ body {
 }
 header {
   text-align: center;
+  clear: both;
+  padding-top: 2px;
 }
 header p {
   font-weight: bold;
@@ -500,9 +502,11 @@ hr {
 }
 .actions-left {
   text-align: left;
+  float: left;
 }
 .actions-right {
   text-align: right;
+  float: right;
 }
 .signature {
   text-align: right;

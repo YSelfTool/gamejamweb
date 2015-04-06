@@ -29,6 +29,8 @@ body {
 
 header {
 	text-align: center;
+	clear: both;
+	padding-top: 2px;
 
 	p {
 		font-weight: bold;
@@ -111,8 +113,14 @@ hr {
 }
 
 .actions {
-	&-left { text-align: left; }
-	&-right { text-align: right; }
+	&-left {
+		text-align: left;
+		float: left;
+	}
+	&-right {
+		text-align: right;
+		float: right;
+	}
 }
 
 .signature {
