@@ -514,6 +514,29 @@ hr {
   vertical-align: super;
   color: rgba(37, 33, 34, 0.6);
 }
+form#mc-embedded-subscribe-form label {
+  padding: 10px;
+}
+form#mc-embedded-subscribe-form label.field {
+  text-align: right;
+  width: 150px;
+  float: left;
+}
+form#mc-embedded-subscribe-form input.textbox {
+  float: left;
+}
+form#mc-embedded-subscribe-form div.submit {
+  text-align: center;
+}
+form#mc-embedded-subscribe-form div.submit input {
+  width: 60%;
+}
+form#mc-embedded-subscribe-form p {
+  clear: both;
+}
+form#mc-embedded-subscribe-form .asterisk {
+  color: #d74641;
+}
 /* Style suggestions from http://typecast.com/blog/a-more-modern-scale-for-web-typography */
 body {
   font-size: 1em;
