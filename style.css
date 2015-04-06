@@ -492,6 +492,9 @@ hr {
 .indent {
   text-indent: 2em;
 }
+.center {
+  text-align: center;
+}
 .actions-left,
 .actions-right {
   font-size: 1.4em;
