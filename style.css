@@ -521,6 +521,46 @@ hr {
   vertical-align: super;
   color: rgba(37, 33, 34, 0.6);
 }
+.clearfix:after {
+  clear: both;
+  content: ".";
+  height: 0px;
+  visibility: hidden;
+  display: block;
+}
+.submission-table {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.submission-table > li {
+  padding: 1em;
+  border-top: 1px solid #f1ab53;
+}
+.submission-table > li ul {
+  width: 60%;
+  margin-top: 1em;
+  padding-top: 1em;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.submission-table > li ul li {
+  display: inline;
+}
+.submission-table > li h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.submission-table img {
+  position: relative;
+  width: 30%;
+  float: right;
+  padding: 0;
+  border: 1px solid #252122;
+}
 form#mc-embedded-subscribe-form label {
   padding: 10px;
 }

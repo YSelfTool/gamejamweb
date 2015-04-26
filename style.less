@@ -139,6 +139,49 @@ hr {
 	color: fadeout(@text-fg, 40%);
 }
 
+.clearfix:after {
+	clear: both;
+	content: ".";
+	height: 0px;
+	visibility: hidden;
+	display: block;
+}
+
+.submission-table {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+
+	> li {
+		padding: 1em;
+		border-top: 1px solid @color4;
+		ul {
+			width: 60%;
+			margin-top: 1em;
+			padding-top: 1em;
+			li {
+				display: inline;
+			}
+			list-style-type: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+		h4 {
+			padding: 0;
+			margin: 0;
+			margin-bottom: 1em;
+			font-size: 2em;
+		}
+	}
+
+	img {
+		position: relative;
+		width: 30%;
+		float: right;
+		padding: 0;
+		border: 1px solid @color1;
+	}
+}
 
 form#mc-embedded-subscribe-form {
 	label {
