@@ -537,6 +537,13 @@ hr {
   padding: 1em;
   border-top: 1px solid #f1ab53;
 }
+.submission-table > li:after {
+  clear: both;
+  content: ".";
+  height: 0px;
+  visibility: hidden;
+  display: block;
+}
 .submission-table > li ul {
   width: 60%;
   margin-top: 1em;

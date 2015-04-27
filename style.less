@@ -139,12 +139,14 @@ hr {
 	color: fadeout(@text-fg, 40%);
 }
 
-.clearfix:after {
-	clear: both;
-	content: ".";
-	height: 0px;
-	visibility: hidden;
-	display: block;
+.clearfix {
+	&:after {
+		clear: both;
+		content: ".";
+		height: 0px;
+		visibility: hidden;
+		display: block;
+	}
 }
 
 .submission-table {
@@ -153,6 +155,8 @@ hr {
 	padding-left: 0;
 
 	> li {
+		.clearfix;
+
 		padding: 1em;
 		border-top: 1px solid @color4;
 		ul {
