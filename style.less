@@ -165,6 +165,10 @@ hr {
 			padding-top: 1em;
 			li {
 				display: inline;
+
+				&:not(:last-child):after {
+					content: ', ';
+				}
 			}
 			list-style-type: none;
 			margin-left: 0;
