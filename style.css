@@ -459,7 +459,7 @@ a {
 }
 a:visited,
 a:hover {
-  color: #f1ab53;
+  color: #d74641;
 }
 hr {
   border: 0;
@@ -501,7 +501,7 @@ hr {
 }
 .actions-left a,
 .actions-right a {
-  color: #f1ab53;
+  color: #d74641;
 }
 .actions-left {
   text-align: left;
