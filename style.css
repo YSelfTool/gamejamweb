@@ -455,11 +455,11 @@ header .countdown-outer .countdown-amount {
   font-weight: bold;
 }
 a {
-  color: #f1ab53;
+  color: #d74641;
 }
 a:visited,
 a:hover {
-  color: #d74641;
+  color: #f1ab53;
 }
 hr {
   border: 0;
@@ -501,7 +501,7 @@ hr {
 }
 .actions-left a,
 .actions-right a {
-  color: #d74641;
+  color: #f1ab53;
 }
 .actions-left {
   text-align: left;
